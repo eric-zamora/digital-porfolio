@@ -1,0 +1,13 @@
+:root {
+    --dark-gray: #2E3D4D;
+    --orange: #F0A630;
+}
+header {
+    background-color: var(--dark-gray);
+}
+
+.introduction h1, .introduction h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--orange);
+}
