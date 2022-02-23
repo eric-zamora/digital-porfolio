@@ -1,13 +1,60 @@
 :root {
-    --dark-gray: #2E3D4D;
-    --orange: #F0A630;
-}
-header {
-    background-color: var(--dark-gray);
+    --background-color: #14151F;
+    --neutral-color: #E0E6EB;
+    --accent-color: #1CC48F;
+
+    --font-family: 'Nunito', sans-serif;
 }
 
-.introduction h1, .introduction h2 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: var(--orange);
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font-family);
 }
+
+header {
+    /* background-color: var(--background-color); */
+    height: 500px;
+    position: relative;
+}
+
+.hero-image {
+    position: aboslute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 500px;
+}
+
+.dot {
+    height: 75px;
+    width: 75px;
+    margin: 35px 50px;
+    background-color: var(--neutral-color);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.navbar-links li {
+    color: var(--neutral-color);
+    font-weight: bold;
+    display: inline-block;
+    margin: 50px;
+    z-index: 0;
+}
+
+.greeting {
+    color: var(--neutral-color);
+    width: fit-content;
+    margin: 100px auto;
+}
+
+.greeting :is(h1, h2, h3) {
+    font-weight: normal;
+}
+
+.accent-word {
+    color: var(--accent-color);
+}
+
+
