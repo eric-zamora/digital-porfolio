@@ -4,47 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
     <!--            HEADER              -->
-    <header style="background-color: red;">
-        <img>
-        <h1>Hello!</h1>
-        <h1>My name is Eric Zamora</h1>
-        <h2>Let's connect!</h3>
+    <header>
+        <!-- <span class="dot"></span> -->
+        <!-- <img class="hero-image" src="./res/hero-image.png"> -->
+        <div class="navbar">
+            <ul class="navbar-links">
+                <li><a>About me</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Contact</a>s</li>
+            </ul>
+        </div>
+
+        <div class="greeting overlay">
+            <h3>Hello!</h3>
+            <h1>My name is Eric!</h1>
+            <h2>I'm a <span class="accent-word"><strong>Developer.</strong></span></h3>
+        </div>
     </header>
 
     <!--            MAIN BODY           -->
-    <main style="background-color: blue;">
+    <main>
 
-        <!-- Project Display -->
-        <div class="project-display">
+        <!-- About me display -->
+        <div class="about-me">
             <span>
-                <h1>Blah Blah</h1>
-                <p>Blah..?</p>
+                <h1>About me</h1>
             </span>
             <span>
-                All of my projects :)
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim congue tortor, eget elementum ipsum finibus vitae. Suspendisse potenti. Sed gravida ante ut porta mattis. Sed vel placerat quam. Vestibulum pretium, lacus eget viverra gravida, eros orci efficitur diam, eget rutrum urna quam in magna. Sed turpis metus, condimentum quis mi sit amet, dapibus tristique tellus. Suspendisse vehicula lobortis efficitur. Sed elit libero, vehicula in interdum nec, interdum vel turpis.</p>
             </span>
         </div>
-        <!-- Skills Display -->
-        <div class="skills-display-container" style="background-color: yellow;">
-            <div class="skills-display">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt, risus in commodo feugiat, mauris dui ultricies risus, vel facilisis risus elit sit amet nunc. Nulla id finibus est. Morbi eget feugiat odio. Pellentesque feugiat vitae felis ac imperdiet.</p>
-                <ul>
-                    <li>Skills</li>
-                    <li>Skills</li>
-                    <li>Skills</li>
-                </ul>
-            </div>
+        <!-- Portfolio Display -->
+        <div class="portfolio">
         </div>
     </main>
 
-    <!--            Footer              -->
-    <footer style="background-color: green;">
-        Email: eric.zamora03@utrgv.edu
+    <!--            Contact              -->
+    <footer>
+        <div class="contact">Email: eric.zamora03@utrgv.edu</div>
     </footer>
 </body>
 </html>
