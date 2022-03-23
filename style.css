@@ -57,7 +57,7 @@ body {
     height: 265px;
     border-radius: 50%;
     filter: blur(50px);
-    opacity: 15%;
+    opacity: 35%;
     position: fixed;
 }
 
