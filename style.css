@@ -73,3 +73,11 @@ main {
     padding: 15px;
     margin: 25px;
 }
+
+.backsplash-logo {
+    width: 523px;
+    opacity: 5%;
+    position: fixed;
+    top: 248px;
+    left: -74px;
+}
