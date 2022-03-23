@@ -20,16 +20,15 @@ body {
 }
 
 .introduction {
-    margin: 20px 0 250px 40px;
+    margin: 20px 0 175px 40px;
 }
 
 .introduction__heading {
     margin-bottom: 45px;
 }
 
-.flexbox {
-    display: flex;
-    justify-content: center;
+.center {
+    text-align: center;
 }
 
 .btn {
@@ -38,9 +37,47 @@ body {
     font-size: 18;
     font-weight: bold;
     padding: 15px 20px;
+}
+
+.btn--primary {
     background-color: var(--clr-accent);
+    margin: 80px 0;
+}
+
+.view-more {
+    filter: drop-shadow(0 5px 4px rgba(0,0,0,0.30));
 }
 
 .green-font {
     color: var(--clr-accent);
+}
+
+.circle {
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 15%;
+    position: fixed;
+}
+
+.circle--blue {
+    background-color: #2F5FD9;
+    top: -113px;
+    left: -187px;
+    
+}
+
+.circle--yellow {
+    background-color: #CB904D;
+    top: 185px;
+    right: -180px;
+}
+
+.circle--red {
+    width: 370px;
+    height: 370px;
+    background-color: #FF5A5F;
+    top: 550px;
+    left: -280px;
 }
