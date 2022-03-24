@@ -1,8 +1,8 @@
 :root {
     --clr-fg: #EBEBEB;
-    --clr-bg: #272C37;
+    --clr-bg: #131321;
     --clr-subtle: #898B91;
-    --clr-accent: #14A289;
+    --clr-accent: #11C5A5;
 
     --font-family: 'Urbanist', sans-serif;
 }
@@ -13,71 +13,61 @@
     font-family: var(--font-family);
 }
 
-header {
-    background-color: var(--clr-bg);
+h1 {
+    font-size: 2rem;
 }
 
-main {
-    background-color: var(--clr-bg);
-    color: var(--clr-fg);
+.flexbox {
+    display: flex;
 }
 
-.introduction {
-    padding: 20px 0 75px 40px;
-}
-
-.introduction__heading {
-    margin-bottom: 45px;
+.clr-green {
+    color: var(--clr-accent);
 }
 
 .center {
     text-align: center;
 }
 
-.flexbox {
-    display: flex;
-    justify-content: space-between;
+.header {
+    background-color: var(--clr-bg);
     align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.header__menu-icon {
+    color: var(--clr-fg);
+}
+
+.header__logo {
+    width: 3rem;
+}
+
+.hero {
+    color: var(--clr-fg);
+    background-color: var(--clr-bg);
+    background-image: url(./res/logo-backsplash-svg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 500px;
+    padding: 7rem 3rem;
+}
+
+.introduction h1 {
+    margin-bottom: 2rem;
 }
 
 .btn {
     all: unset;
-    border-radius: 5px;
-    font-size: 18;
-    font-weight: bold;
-    padding: 15px 20px;
+    margin: 5rem 0;
 }
 
-.btn--primary {
+.btn--cta {
     background-color: var(--clr-accent);
-    margin: 80px 0;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-.view-more {
-    padding: 15px 0 40px 0;
-    filter: drop-shadow(0 5px 4px rgba(0,0,0,0.30));
-}
-
-.green-font {
-    color: var(--clr-accent);
-}
-
-.hamburger {
-    padding: 15px;
-    margin: 20px;
-    color: var(--clr-fg);
-}
-
-.logo {
-    width: 43px;
-    padding: 15px;
-    margin: 25px;
-}
-
-.backsplash-logo {
-    width: 523px;
-    opacity: 5%;
-    position: absolute;
-    top: 248px;
-    left: -74px;
-}

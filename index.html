@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/73667654b8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Eric Zamora</title>
-</head>
-<body>
-    <header>
-        <div class="header flexbox">
-            <i class="hamburger fa-solid fa-bars fa-lg"></i>
-            <img src="./res/logo-white-svg.svg" alt="Eric Zamora's logo" class="logo">
-        </div>
-    </header>
-    
-    <main>
-        <img src="./res/logo-white-svg.svg" alt="Eric Zamora's logo" class="backsplash-logo">
-        <div class="introduction">
-            <h1 class="introduction__heading">Hi!</h1>
-            <h3 class="introduction__subsubheading">My name is Eric Zamora</h3>
-            <h1 class="introduction__heading">I'm a <span class="green-font">Web Developer</span></h1>
-        </div>
-        <div class="center">
-            <button class="btn btn--primary">Let's work together!</button>
-
-            <div class="view-more">
-                <p class="view-more__content">Check out my projects</p>
-                <i class="view-more__icon fa-solid fa-chevron-down"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/73667654b8.js" crossorigin="anonymous"></script>
+        <link href="style.css" rel="stylesheet">
+        <title>Eric Zamora | Web Developer</title>
+    </head>
+    <body>
+        <header>
+            <div class="header flexbox">
+                <i class="fa-solid fa-bars fa-xl header__menu-icon"></i>
+                <img src="./res/logo-white-svg.svg" alt="eric zamora's logo" class="header__logo">
             </div>
-        </div>
-    </main>
-    
-    <footer>
-
-    </footer>
-</body>
+        </header>
+        <main>
+            <section class="hero">
+                <!-- <embed src="./res/logo-white-svg.svg" class="hero__logo"> -->
+                <div class="introduction">
+                    <h1>Hi!</h1>
+                    <h3>My name is Eric Zamora</h3>
+                    <h1>I'm a <span class="clr-green">Web Developer</span></h1>
+                </div>
+                <div class="center">
+                    <button class="btn btn--cta">Let's work together!</button>
+                    <div class="see-more">
+                        <p class="see-more__text">Check out my projecs</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+             
+        </footer>
+    </body>
 </html>
