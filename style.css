@@ -1,0 +1,148 @@
+:root {
+    --clr-fg: #EBEBEB;
+    --clr-bg: #111111;
+    --clr-accent: #14C6A6;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    color: var(--clr-fg);
+    background-color: var(--clr-bg);
+}
+
+header {
+    display: flex;
+    margin: 0;
+    padding: 1.5vw 10vw;
+    justify-content: space-between;
+    
+}
+
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 1.5rem;
+}
+
+.contact-info > div {
+    padding: 0.25rem 0;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0 auto;
+    
+}
+
+.introduction > h1 {
+    margin: 0 0 2rem 0;
+    padding: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.introduction > h3 {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+}
+
+img {
+    position: absolute;
+    left: 50%;
+    margin-left: -568px;
+    z-index: -10;
+}
+
+a {
+    color: var(--clr-fg);
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+a:hover {
+    color: var(--clr-accent);
+    
+}
+
+
+button {
+    all: unset;
+    box-sizing: border-box;
+    border: solid 4px transparent;
+    padding: 15px 20px;
+    background: var(--clr-accent);
+    border-radius: 50px;
+    
+}
+
+button:hover {
+    background-color: var(--clr-bg);
+    border: solid 4px var(--clr-accent);
+    transition: border 0.5s, background, 0.5s;
+}
+
+.fa-phone, .fa-envelope {
+    margin: 0 8px;
+}
+
+/* .introduction__wrapper {
+    display: flex;
+    position: relative;
+    top: -24px;
+    height: 80px;
+    overflow-y: hidden;
+} */
+
+/* .spin-words {
+    padding-left: 1ch;
+}
+
+.spin-words > span {
+    display: block;
+    height: 100%;
+    background-color: red;
+} */
+
+#type-word-div {
+    display: inline;
+    margin: 0;
+    transition: all 10ms;
+}
+
+#type-word-div::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 1.5px;
+    height: 40px;
+    background-color: var(--clr-fg);
+    animation: blinks 1s infinite;
+}
+
+.clr-accent {
+    color: var(--clr-accent);
+}
+
+.transparent {
+    opacity: 0;
+}
+
+@keyframes blinks {
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes word-spin {
+    100% {
+        transform: translateY(-50px);
+    }
+}
