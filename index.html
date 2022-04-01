@@ -15,6 +15,8 @@
     </head>
 
     <body>
+
+        
         <header>
             <div class="contact-info">
                 <div class="phone-number">
@@ -40,18 +42,25 @@
             </nav>
         </header>
 
+        <!-- MAIN HERO SECTION -->
         <main>
-            <img src="./res/logo (1).svg">
-            <div class="introduction">
-                <h1>Hi!</h1>
-                <h3>My name is Eric Zamora</h3>
-                <h1 id="wrapper"> I am a 
-                    <div id="type-word-div" class="clr-accent type-words">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="hero-introduction">
+                        <h1>Hi!</h1>
+                        <h3>My name is Eric Zamora</h3>
+                        <h1 id="wrapper"> I am a
+                            <div id="type-word-div" class="clr-accent type-words">
+                            </div>
+                        </h1>
                     </div>
-                </h1>
-                <div class="introduction__wrapper">
+                        <div class="hero-cta">
+                            <button class="btn" onclick="location.href = './project-proposal.html'">Let's work together!</button>
+                        </div>
+                </div>
+                <!-- <div class="introduction__wrapper">
                     
-                    <!-- <div class="spin-words">
+                     <div class="spin-words">
                         <h1><span class="clr-accent">Web Developer</span></h1>
                         <h1><span class="clr-accent">Software Engineer</span></h1>
                         <h1><span class="clr-accent">Computer Engineer</span></h1>
@@ -65,35 +74,61 @@
                         <h1><span class="clr-accent">Programmer</span></h1>
                         <h1><span class="clr-accent">Freelancer</span></h1>
                         <h1><span class="clr-accent">Student</span></h1>
-                    </div> -->
-                </div>
+                    </div>
+                </div> -->
                 
-                <button onclick="location.href = './project-proposal.html'">Let's work together!</button>
+                
             </div>
         </main>
 
+        <section class="about-me-section row">
+            <div class="col">
+                <h1>About Me</h1>
+                <p>Hi! I am a Full-Stack Web Developer who loves to design and code websites/web applications. I love being able to use my skills to help clients around the world! My passion for Web Development comes from being able to design, create, and deploy practical programs that are useful to others.</p>
+            </div>
+            <div class="col">
+                
+            </div>
+        </section>
 
+        <section class="contact-section">
+            <div class="contact-form-content">
+                <h1>Contact</h1>
+                <div class="contact-section__p">
+                    <p>Have a project in mind?</p>
+                    <p>Let's work together!</p>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" action="https://api.staticforms.xyz/submit" method="post">
+                        
+                        <input type="hidden" name="accessKey" value="bee24778-df8b-4cf4-98c4-c36d2c6c7ea7">
+                        <div class="form-input">
+                            <label for="name">Name</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-input">
+                            <label for="email">Email</label>
+                            <input type="text" name="email">
+                        </div>
+                        <div class="form-input">
+                            <label for="message">Message</label>
+                            <textarea name="message"></textarea>
+                        </div>
+                        <input type="hidden" name="redirectTo" value="">
+                        <input class="btn btn--primary" type="submit" value="Send" />
+                    </form>
+                </div>
+            </div>
+        </section>
 
-
-
-        <h1>About Me</h1>
-        <p>Hi! I am a Full-Stack Web Developer who loves to design and code websites/web applications. I love being able to use my skills to help clients around the world! My passion for Web Development comes from being able to design, create, and deploy practical programs that are useful to others.</p>
-        <h1>Contact</h1>
-        <p>Have a project in mind?</p>
-        <p>Let's work together!</p>
-
-        <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="bee24778-df8b-4cf4-98c4-c36d2c6c7ea7">
-            <input type="text" name="name">
-            <input type="text" name="email">
-            <textarea name="message"></textarea>
-            <input type="hidden" name="redirectTo" value="">
-            <input type="submit" value="Submit" />
-        </form>
-        <h1>Social Media</h1>
-        <p>Twitter</p>
-        <p>LinkedIn</p>
-        <p>Github</p>
+        
+        <footer>
+            <div class="social-media">
+                <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                <i class="fa-brands fa-github fa-2xl"></i>
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+            </div>
+        </footer>
 
         <script src="./functions.js"></script>
     </body>
