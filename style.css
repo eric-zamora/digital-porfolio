@@ -77,7 +77,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5vh 10vw;
+    padding: 3vh 5vw;
     font-size: calc((1.5vw + 1vh) / 2);
 }
 
@@ -89,7 +89,7 @@ nav li {
 
 .fa-phone, .fa-envelope {
     margin: 0;
-    padding: 0 0.5vw;
+    padding: 0.75vh 0.5vw;
 }
 
 
@@ -97,16 +97,23 @@ nav li {
 ///////////////       BODY CSS       ///////////////
 ///////////////////////////////////////////////// */
 
-h1:first-child {
+h1:nth-child(2) {
     margin: 5vh 0;
+}
+
+.hero img {
+    position: absolute;
+    z-index: -1;
+    width: 50vw;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hero {
     height: 90vh;
-    background: url('./res/logo-backsplash-color.svg') var(--clr-bg);
-    background-repeat: no-repeat;
-    background-position: 50% 20vh;
-    background-size: calc((50vw + 50vh) / 2);
+    background: var(--clr-bg);
+    /* background-size: calc((50vw + 50vh) / 2); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +121,8 @@ h1:first-child {
 }
 
 .hero-content {
-    margin-top: -20vh;
+    z-index: 10;
+    margin-top: -15vh;
     width: 50vw;
 }
 
@@ -317,9 +325,9 @@ i {
         display: none;
     }
 
-    .hero {
-        background-size: 120vw;
-        background-position: 50% 15vh;
+    .hero img {
+        top: 25vh;
+        width: 120vw;
     }
 
     .hero-content {
@@ -361,7 +369,3 @@ i {
     }
 }
 
-img {
-    width: 100px;
-    z-index: 10;
-}
