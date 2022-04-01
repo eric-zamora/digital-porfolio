@@ -55,6 +55,14 @@ button:hover {
     border-radius: 50px;
 }
 
+.clr-accent {
+    color: var(--clr-accent);
+}
+
+.transparent {
+    opacity: 0;
+}
+
 
 /* /////////////////////////////////////////////////
 ///////////////      HEADER CSS      ///////////////
@@ -122,50 +130,27 @@ h1:nth-child(2) {
     margin: 0 auto;
 }
 
+#type-word-div {
+    display: inline;
+    margin: 0;
+    transition: all 10ms;
+}
+
+#type-word-div::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 1.5px;
+    height: 40px;
+    background-color: var(--clr-fg);
+    animation: blinks 1s infinite;
+}
+
 
 /* /////////////////////////////////////////////////
 /////////////       ABOUT ME CSS       /////////////
 ///////////////////////////////////////////////// */
 
-
-
-
-
-
-input[type=text] {
-    height: 2.5em;
-}
-
-textarea {
-    height: 8rem;
-    resize:none;
-}
-
-input[type=text], textarea {
-    box-sizing: border-box;
-    color: var(--clr-fg);
-    display: block;
-    background-color: #62626C;
-    padding: 0.5rem 1rem;
-    border: 1px solid #62626C;
-    width: 100%;
-    margin: 0.5rem 0;
-    border-radius: 10px;
-}
-
-input[type=text]:focus, textarea:focus {
-    outline: none;
-    border: 2px solid var(--clr-accent);
-}
-
-
-
-
-
-
-.form-input {
-    margin: 1.5rem 0;
-}
 
 .about-me-section {
     width: 100%;
@@ -186,31 +171,76 @@ input[type=text]:focus, textarea:focus {
     background-color: red;
 }
 
+
+/* /////////////////////////////////////////////////
+///////////       CONTACT FORM CSS       ///////////
+///////////////////////////////////////////////// */
+
 .contact-section {
-    height: 110vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.contact-section h1 {
-    margin: 2rem;
+.contact-section__container {
     text-align: center;
+    margin-top: 8vh;
 }
 
-.contact-section__p {
-    margin: 1rem;
-    line-height: 0.5rem;
-    text-align: center;
+.contact-section__container--title {
+    padding: 1vh;
+    margin: 2vh;
 }
 
-.contact-form-container {
-    width: 20vw;
-    margin: 5rem auto;
-    padding: 2rem;
-    border-radius: 25px;
-    background-color: #37373F;
+.contact-section__container--text p {
+    margin: 0;
+    padding: 0.5vh;
 }
+
+.contact-form__container {
+    width: 60vw;
+    max-width: 400px;
+    background-color: #27272b;
+    padding: 3vh 2.5vw;
+    margin: 3vh 0.5vw;
+}
+
+.contact-form__form-input {
+    margin: 4vh 0;
+}
+
+.contact-form input[type=text], .contact-form textarea {
+    box-sizing: border-box;
+    display: block;
+    color: var(--clr-fg);
+    background-color: #505057;
+    border: 1px solid #505057;
+    width: 100%;
+    margin: 1vh 0;
+    padding: 2.5vh 2vh; 
+    border-radius: calc(4vh * 0.1);
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: none;
+    border: 2px solid var(--clr-accent);
+}
+
+input[type=text] {
+    height: 4vh;
+    
+}
+
+textarea {
+    height: 15vh;
+    /* border-radius: calc(4vh * 0.5); */
+    resize:none;
+}
+
+
+
 
 .social-media {
     width: fit-content;
@@ -264,29 +294,7 @@ i {
     background-color: red;
 } */
 
-#type-word-div {
-    display: inline;
-    margin: 0;
-    transition: all 10ms;
-}
 
-#type-word-div::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    width: 1.5px;
-    height: 40px;
-    background-color: var(--clr-fg);
-    animation: blinks 1s infinite;
-}
-
-.clr-accent {
-    color: var(--clr-accent);
-}
-
-.transparent {
-    opacity: 0;
-}
 
 
 /* //////////////////////////////////////////////////
@@ -329,6 +337,10 @@ i {
 
     .phone-number, .email {
         padding: 0.5vh;
+    }
+
+    .contact-form__container {
+        padding: 8vw;
     }
 }
 
