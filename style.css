@@ -151,6 +151,10 @@ a:hover {
     margin: 0 1rem;
 }
 
+.container--mobile-nav {
+    display: none;
+}
+
 
 .clr-accent {
     color: var(--clr-accent);
