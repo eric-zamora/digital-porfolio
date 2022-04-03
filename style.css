@@ -75,11 +75,12 @@ a:hover {
 }
 
 .btn--secondary {
-    border: 3px solid var(--clr-neutral);
+    background-color: var(--clr-neutral);
 }
 
 .btn--secondary:hover {
-    background-color: var(--clr-neutral);
+    background-color: transparent;
+    border: solid 3px var(--clr-neutral);
 }
 
 .container--header {
