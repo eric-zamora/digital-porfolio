@@ -70,7 +70,7 @@ a:hover {
 }
 
 .btn--primary:hover {
-    background-color: var(--clr-bg);
+    background-color: transparent;
     border-color: var(--clr-accent);
 }
 
