@@ -171,6 +171,7 @@ a:hover {
         display: none;
     }
     .container--mobile-nav {
+        display: inline;
         padding: 1rem;
         margin: 1rem;
         text-align: right;
