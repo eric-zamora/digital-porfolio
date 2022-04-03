@@ -19,7 +19,6 @@ body {
     background: radial-gradient(#1F1F1F, var(--clr-bg));
     color: var(--clr-fg);
     height: 100vh;
-    overflow: hidden;
 }
 header {
     width: 100vw;
